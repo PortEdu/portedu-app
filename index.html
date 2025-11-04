@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortEdu - Portfólio Educacional</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 2rem;
+        }
+        
+        nav {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            display: block;
+        }
+        
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        
+        main {
+            padding: 2rem 0;
+        }
+        
+        section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+        
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .card {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .card h3 {
+            color: #764ba2;
+            margin-bottom: 0.5rem;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav a {
+                width: 100%;
+                text-align: center;
+            }
+            
+            section {
+                padding: 1.5rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 10px;
+            }
+            
+            section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>PortEdu - Portfólio Educacional</h1>
+            <nav>
+                <ul>
+                    <li><a href="#artefatos">Artefatos</a></li>
+                    <li><a href="#competencias">Competências</a></li>
+                    <li><a href="#rubricas">Rubricas</a></li>
+                    <li><a href="#metas-cpd">Metas CPD</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="artefatos">
+            <h2>Artefatos</h2>
+            <p>Gerencie e visualize seus artefatos educacionais.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Projetos</h3>
+                    <p>Trabalhos e projetos desenvolvidos ao longo do curso.</p>
+                </div>
+                <div class="card">
+                    <h3>Atividades</h3>
+                    <p>Atividades práticas e exercícios realizados.</p>
+                </div>
+                <div class="card">
+                    <h3>Documentos</h3>
+                    <p>Relatórios, artigos e outros documentos produzidos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="competencias">
+            <h2>Competências</h2>
+            <p>Acompanhe o desenvolvimento de suas competências.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Comunicação</h3>
+                    <p>Capacidade de comunicar ideias de forma clara e eficaz.</p>
+                </div>
+                <div class="card">
+                    <h3>Trabalho em Equipe</h3>
+                    <p>Habilidade de colaborar e trabalhar em grupo.</p>
+                </div>
+                <div class="card">
+                    <h3>Pensamento Crítico</h3>
+                    <p>Análise crítica e resolução de problemas complexos.</p>
+                </div>
+                <div class="card">
+                    <h3>Criatividade</h3>
+                    <p>Capacidade de inovar e propor soluções criativas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="rubricas">
+            <h2>Rubricas</h2>
+            <p>Critérios de avaliação e padrões de qualidade.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Avaliação de Projetos</h3>
+                    <p>Critérios para avaliar a qualidade dos projetos desenvolvidos.</p>
+                </div>
+                <div class="card">
+                    <h3>Participação</h3>
+                    <p>Níveis de engajamento e participação nas atividades.</p>
+                </div>
+                <div class="card">
+                    <h3>Qualidade Técnica</h3>
+                    <p>Padrões técnicos e boas práticas de desenvolvimento.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="metas-cpd">
+            <h2>Metas de Desenvolvimento Profissional Contínuo (CPD)</h2>
+            <p>Defina e acompanhe suas metas de desenvolvimento profissional.</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Curto Prazo</h3>
+                    <p>Objetivos a serem alcançados nos próximos 3-6 meses.</p>
+                </div>
+                <div class="card">
+                    <h3>Médio Prazo</h3>
+                    <p>Metas para o próximo ano letivo.</p>
+                </div>
+                <div class="card">
+                    <h3>Longo Prazo</h3>
+                    <p>Visão de carreira e objetivos de desenvolvimento futuro.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 PortEdu - Portfólio Educacional. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
