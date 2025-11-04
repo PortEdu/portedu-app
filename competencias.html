@@ -11,6 +11,26 @@
             padding: 0;
             background-color: #f5f5f5;
         }
+        nav {
+            background-color: #4CAF50;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
         h1 {
             color: #333;
             text-align: center;
@@ -34,34 +54,49 @@
         tr:nth-child(even) {
             background-color: #f9f9f9;
         }
-        tr:hover {
-            background-color: #f1f1f1;
-        }
     </style>
 </head>
 <body>
-    <h1>Competências</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="artefatos.html">Artefatos</a></li>
+            <li><a href="competencias.html">Competências</a></li>
+            <li><a href="rubricas.html">Rubricas</a></li>
+            <li><a href="metas-cpd.html">Metas CPD</a></li>
+        </ul>
+    </nav>
+
+    <h1>Competências Docentes</h1>
+    
     <table>
         <thead>
             <tr>
-                <th>Nome</th>
+                <th>Competência</th>
                 <th>Descrição</th>
-                <th>Referência BNCC</th>
-                <th>Artefatos Relacionados</th>
+                <th>Nível Esperado</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Exemplo de Competência 1</td>
-                <td>Descrição detalhada da competência</td>
-                <td>BNCC-001</td>
-                <td><a href="#">Artefato 1</a>, <a href="#">Artefato 2</a></td>
+                <td>Planejamento</td>
+                <td>Capacidade de organizar e estruturar atividades pedagógicas</td>
+                <td>Avançado</td>
             </tr>
             <tr>
-                <td>Exemplo de Competência 2</td>
-                <td>Descrição detalhada da competência</td>
-                <td>BNCC-002</td>
-                <td><a href="#">Artefato 3</a></td>
+                <td>Comunicação</td>
+                <td>Habilidade de transmitir conhecimento de forma clara</td>
+                <td>Avançado</td>
+            </tr>
+            <tr>
+                <td>Tecnologia</td>
+                <td>Uso de ferramentas digitais no processo educativo</td>
+                <td>Intermediário</td>
+            </tr>
+            <tr>
+                <td>Avaliação</td>
+                <td>Capacidade de avaliar o progresso dos alunos</td>
+                <td>Avançado</td>
             </tr>
         </tbody>
     </table>
