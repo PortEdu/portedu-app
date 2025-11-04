@@ -5,9 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rubricas de Avaliação</title>
     <style>
+        /* Estilos do Menu de Navegação */
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #555;
+            border-radius: 4px;
+        }
+        
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
             background-color: #f5f5f5;
         }
         h1 {
@@ -61,6 +79,15 @@
     </style>
 </head>
 <body>
+    <!-- Menu de Navegação -->
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="artefatos.html">Artefatos</a>
+        <a href="competencias.html">Competências</a>
+        <a href="rubricas.html">Rubricas</a>
+        <a href="metas-cpd.html">Metas CPD</a>
+    </nav>
+
     <h1>Sistema de Rubricas de Avaliação</h1>
     
     <div class="rubrica-container">
@@ -79,7 +106,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><strong>Documentação</strong></td>
+                    <td>Documentação</td>
                     <td class="nivel-excelente">Documentação completa, clara e bem estruturada com todos os requisitos</td>
                     <td class="nivel-bom">Documentação presente com a maioria dos requisitos</td>
                     <td class="nivel-satisfatorio">Documentação básica com alguns elementos faltando</td>
@@ -87,7 +114,7 @@
                     <td>README.md, Diagramas UML, Especificações</td>
                 </tr>
                 <tr>
-                    <td><strong>Qualidade do Código</strong></td>
+                    <td>Qualidade do Código</td>
                     <td class="nivel-excelente">Código limpo, bem organizado, seguindo padrões e boas práticas</td>
                     <td class="nivel-bom">Código organizado com algumas inconsistências menores</td>
                     <td class="nivel-satisfatorio">Código funcional mas com problemas de organização</td>
@@ -95,7 +122,7 @@
                     <td>Arquivos fonte, Estrutura de pastas, Comentários</td>
                 </tr>
                 <tr>
-                    <td><strong>Funcionalidades</strong></td>
+                    <td>Funcionalidades</td>
                     <td class="nivel-excelente">Todas as funcionalidades implementadas e funcionando perfeitamente</td>
                     <td class="nivel-bom">Maioria das funcionalidades implementadas corretamente</td>
                     <td class="nivel-satisfatorio">Funcionalidades básicas implementadas com limitações</td>
@@ -103,7 +130,7 @@
                     <td>Módulos funcionais, Testes de integração</td>
                 </tr>
                 <tr>
-                    <td><strong>Testes</strong></td>
+                    <td>Testes</td>
                     <td class="nivel-excelente">Cobertura de testes completa com testes unitários e de integração</td>
                     <td class="nivel-bom">Boa cobertura de testes com algumas áreas não testadas</td>
                     <td class="nivel-satisfatorio">Testes básicos presentes mas cobertura limitada</td>
@@ -111,7 +138,7 @@
                     <td>Arquivos de teste, Relatórios de cobertura</td>
                 </tr>
                 <tr>
-                    <td><strong>Interface do Usuário</strong></td>
+                    <td>Interface do Usuário</td>
                     <td class="nivel-excelente">Interface intuitiva, responsiva e acessível</td>
                     <td class="nivel-bom">Interface funcional e agradável com pequenos ajustes necessários</td>
                     <td class="nivel-satisfatorio">Interface básica funcional mas com problemas de usabilidade</td>
@@ -138,7 +165,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><strong>Comunicação</strong></td>
+                    <td>Comunicação</td>
                     <td class="nivel-excelente">Comunicação constante, clara e efetiva entre todos os membros</td>
                     <td class="nivel-bom">Boa comunicação com alguns momentos de falha</td>
                     <td class="nivel-satisfatorio">Comunicação básica mas irregular</td>
@@ -146,7 +173,7 @@
                     <td>Atas de reunião, Mensagens, E-mails</td>
                 </tr>
                 <tr>
-                    <td><strong>Controle de Versão</strong></td>
+                    <td>Controle de Versão</td>
                     <td class="nivel-excelente">Uso exemplar de Git com commits descritivos e branches organizados</td>
                     <td class="nivel-bom">Bom uso de Git com algumas inconsistências</td>
                     <td class="nivel-satisfatorio">Uso básico de Git com problemas de organização</td>
@@ -154,7 +181,7 @@
                     <td>Histórico de commits, Pull requests, Branches</td>
                 </tr>
                 <tr>
-                    <td><strong>Divisão de Tarefas</strong></td>
+                    <td>Divisão de Tarefas</td>
                     <td class="nivel-excelente">Tarefas bem distribuídas e balanceadas entre todos</td>
                     <td class="nivel-bom">Boa distribuição com pequenos desbalanceamentos</td>
                     <td class="nivel-satisfatorio">Distribuição desigual mas todas as tarefas foram feitas</td>
@@ -162,7 +189,7 @@
                     <td>Board de tarefas, Issues, Sprints</td>
                 </tr>
                 <tr>
-                    <td><strong>Resolução de Conflitos</strong></td>
+                    <td>Resolução de Conflitos</td>
                     <td class="nivel-excelente">Conflitos resolvidos de forma construtiva e profissional</td>
                     <td class="nivel-bom">Conflitos geralmente bem resolvidos</td>
                     <td class="nivel-satisfatorio">Conflitos resolvidos mas com dificuldades</td>
@@ -170,7 +197,7 @@
                     <td>Documentação de decisões, Retrospectivas</td>
                 </tr>
                 <tr>
-                    <td><strong>Participação</strong></td>
+                    <td>Participação</td>
                     <td class="nivel-excelente">Participação ativa e consistente de todos os membros</td>
                     <td class="nivel-bom">Boa participação geral com algumas variações</td>
                     <td class="nivel-satisfatorio">Participação irregular de alguns membros</td>
@@ -180,6 +207,5 @@
             </tbody>
         </table>
     </div>
-
 </body>
 </html>
