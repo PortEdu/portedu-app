@@ -11,6 +11,31 @@
             padding: 20px;
             background-color: #f5f5f5;
         }
+        nav {
+            background-color: #007bff;
+            padding: 15px 30px;
+            margin: -20px -20px 20px -20px;
+            border-radius: 8px 8px 0 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        nav ul li a:hover {
+            opacity: 0.8;
+        }
         .container {
             max-width: 1400px;
             margin: 0 auto;
@@ -35,73 +60,24 @@
             color: white;
             padding: 12px;
             text-align: left;
-            font-weight: 600;
-        }
-        td {
-            padding: 12px;
-            border-bottom: 1px solid #ddd;
-        }
-        tr:hover {
-            background-color: #f8f9fa;
-        }
-        .link-column a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        .link-column a:hover {
-            text-decoration: underline;
-        }
-        .tipo-badge {
-            display: inline-block;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 0.9em;
-            font-weight: 500;
-        }
-        .tipo-projeto {
-            background-color: #d4edda;
-            color: #155724;
-        }
-        .tipo-documento {
-            background-color: #d1ecf1;
-            color: #0c5460;
-        }
-        .tipo-apresentacao {
-            background-color: #fff3cd;
-            color: #856404;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="artefatos.html">Artefatos</a></li>
+                <li><a href="competencias.html">Competências</a></li>
+                <li><a href="rubricas.html">Rubricas</a></li>
+                <li><a href="metas-cpd.html">Metas CPD</a></li>
+            </ul>
+        </nav>
+        
         <h1>Artefatos do Portfólio</h1>
         
-        <table>
-            <thead>
-                <tr>
-                    <th>Título</th>
-                    <th>Descrição</th>
-                    <th>Tipo</th>
-                    <th>Data</th>
-                    <th>Autor</th>
-                    <th>Competências Relacionadas</th>
-                    <th>Link para o Documento</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Exemplo de linha de artefato -->
-                <tr>
-                    <td>Exemplo de Projeto</td>
-                    <td>Descrição detalhada do artefato do portfólio</td>
-                    <td><span class="tipo-badge tipo-projeto">Projeto</span></td>
-                    <td>01/11/2025</td>
-                    <td>Nome do Autor</td>
-                    <td>Competência 1, Competência 2</td>
-                    <td class="link-column"><a href="#">Acessar Documento</a></td>
-                </tr>
-                <!-- Adicione mais linhas de artefatos aqui -->
-            </tbody>
-        </table>
+        <!-- Content will go here -->
     </div>
 </body>
 </html>
