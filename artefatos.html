@@ -4,51 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artefatos do Portfólio - PortEdu</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        nav {
-            background-color: #007bff;
-            padding: 15px 30px;
-            margin: -20px -20px 20px -20px;
-            border-radius: 8px 8px 0 0;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 30px;
-        }
-        nav ul li {
-            display: inline;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: opacity 0.3s;
-        }
-        nav ul li a:hover {
-            opacity: 0.8;
-        }
+        /* Estilos específicos para artefatos.html */
         .container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 0 20px;
         }
         h1 {
-            color: #333;
-            border-bottom: 3px solid #007bff;
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
             padding-bottom: 10px;
             margin-bottom: 30px;
+            font-size: 2rem;
         }
         table {
             width: 100%;
@@ -56,28 +25,80 @@
             margin-top: 20px;
         }
         th {
-            background-color: #007bff;
+            background-color: #667eea;
             color: white;
             padding: 12px;
             text-align: left;
         }
+        .artefato-card {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="artefatos.html">Artefatos</a></li>
-                <li><a href="competencias.html">Competências</a></li>
-                <li><a href="rubricas.html">Rubricas</a></li>
-                <li><a href="metas-cpd.html">Metas CPD</a></li>
-            </ul>
-        </nav>
-        
-        <h1>Artefatos do Portfólio</h1>
-        
-        <!-- Content will go here -->
-    </div>
+    <header>
+        <div class="container">
+            <h1>PortEdu - Artefatos</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="artefatos.html">Artefatos</a></li>
+                    <li><a href="competencias.html">Competências</a></li>
+                    <li><a href="rubricas.html">Rubricas</a></li>
+                    <li><a href="metacpd.html">Metas CPD</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <div class="artefato-card">
+            <h1>Artefatos do Portfólio</h1>
+            <p>Esta seção lista todos os artefatos (projetos, trabalhos, documentos) que compõem o seu portfólio educacional.</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome do Artefato</th>
+                        <th>Tipo</th>
+                        <th>Data</th>
+                        <th>Competências Relacionadas</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Projeto Final de Análise de Dados</td>
+                        <td>Projeto</td>
+                        <td>15/10/2025</td>
+                        <td>Pensamento Crítico, Tecnologia</td>
+                        <td><a href="#">Ver Detalhes</a></td>
+                    </tr>
+                    <tr>
+                        <td>Relatório de Estágio Supervisionado</td>
+                        <td>Documento</td>
+                        <td>01/11/2025</td>
+                        <td>Comunicação, Trabalho em Equipe</td>
+                        <td><a href="#">Ver Detalhes</a></td>
+                    </tr>
+                    <tr>
+                        <td>Apresentação sobre Metodologias Ativas</td>
+                        <td>Atividade</td>
+                        <td>05/11/2025</td>
+                        <td>Comunicação, Criatividade</td>
+                        <td><a href="#">Ver Detalhes</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© 2025 PortEdu - Portfólio Educacional. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>

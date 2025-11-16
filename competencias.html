@@ -4,36 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Competências - PortEdu</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        nav {
-            background-color: #4CAF50;
-            padding: 10px;
-            margin-bottom: 20px;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 20px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
+        /* Estilos específicos para competencias.html */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
         h1 {
-            color: #333;
-            text-align: center;
+            color: #667eea;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+        .competencia-card {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         table {
             width: 100%;
@@ -47,7 +38,7 @@
             text-align: left;
         }
         th {
-            background-color: #4CAF50;
+            background-color: #667eea;
             color: white;
             font-weight: bold;
         }
@@ -57,48 +48,67 @@
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="artefatos.html">Artefatos</a></li>
-            <li><a href="competencias.html">Competências</a></li>
-            <li><a href="rubricas.html">Rubricas</a></li>
-            <li><a href="metas-cpd.html">Metas CPD</a></li>
-        </ul>
-    </nav>
-
-    <h1>Competências Docentes</h1>
-    
-    <table>
-        <thead>
-            <tr>
-                <th>Competência</th>
-                <th>Descrição</th>
-                <th>Nível Esperado</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Planejamento</td>
-                <td>Capacidade de organizar e estruturar atividades pedagógicas</td>
-                <td>Avançado</td>
-            </tr>
-            <tr>
-                <td>Comunicação</td>
-                <td>Habilidade de transmitir conhecimento de forma clara</td>
-                <td>Avançado</td>
-            </tr>
-            <tr>
-                <td>Tecnologia</td>
-                <td>Uso de ferramentas digitais no processo educativo</td>
-                <td>Intermediário</td>
-            </tr>
-            <tr>
-                <td>Avaliação</td>
-                <td>Capacidade de avaliar o progresso dos alunos</td>
-                <td>Avançado</td>
-            </tr>
-        </tbody>
-    </table>
+    <header>
+        <div class="container">
+            <h1>PortEdu - Competências</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="artefatos.html">Artefatos</a></li>
+                    <li><a href="competencias.html">Competências</a></li>
+                    <li><a href="rubricas.html">Rubricas</a></li>
+                    <li><a href="metacpd.html">Metas CPD</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <div class="competencia-card">
+            <h1>Competências Docentes</h1>
+            <p>Esta tabela detalha as competências-chave e o nível de proficiência esperado em cada uma delas.</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Competência</th>
+                        <th>Descrição</th>
+                        <th>Nível Esperado</th>
+                        <th>Evidências (Artefatos)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Planejamento</td>
+                        <td>Capacidade de organizar e estruturar atividades pedagógicas</td>
+                        <td>Avançado</td>
+                        <td>Planos de Aula, Projetos Curriculares</td>
+                    </tr>
+                    <tr>
+                        <td>Comunicação</td>
+                        <td>Habilidade de transmitir conhecimento de forma clara e eficaz</td>
+                        <td>Avançado</td>
+                        <td>Apresentações, Relatórios, Artigos</td>
+                    </tr>
+                    <tr>
+                        <td>Tecnologia</td>
+                        <td>Uso de ferramentas digitais e recursos tecnológicos no processo educativo</td>
+                        <td>Intermediário</td>
+                        <td>Uso de LMS, Criação de Conteúdo Digital</td>
+                    </tr>
+                    <tr>
+                        <td>Avaliação</td>
+                        <td>Capacidade de avaliar o progresso dos alunos de forma formativa e somativa</td>
+                        <td>Avançado</td>
+                        <td>Instrumentos de Avaliação, Rubricas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© 2025 PortEdu - Portfólio Educacional. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
